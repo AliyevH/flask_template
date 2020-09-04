@@ -22,7 +22,13 @@ https://github.com/AliyevH/flask_template.git
 │   ├── errors.py
 │   ├── models.py
 │   └── routes.py
-├── config.py
+├── core
+│   ├── __init__.py
+│   └── settings
+│       ├── __init__.py
+│       ├── base.py
+│       ├── development.py
+│       └── production.py
 ├── requirements.txt
 ├── service.py
 ├── tests
@@ -30,5 +36,5 @@ https://github.com/AliyevH/flask_template.git
 │   └── test_other.py
 └── uwsgi.ini
 
-2 directories, 13 files
+4 directories, 17 files
 ```

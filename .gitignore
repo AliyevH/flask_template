@@ -1,1 +1,8 @@
 .venv
+venv
+.env
+env
+.py3
+__pycache__
+.vscode
+.ide

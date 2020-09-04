@@ -8,10 +8,14 @@ from flask_jwt_extended import jwt_required, create_access_token, create_refresh
 
 import requests
 import datetime
-
 from .models import Test
 from .errors import *
 from .decorators import custom_decorator
+
+@custom_decorator
+@app.route("/test", methods=["GET"])
+def test():
+    return jsonify({"message": "Flask app is working"})
 
 @app.route('/api/v1/auth/refresh/', methods=['POST'])
 @jwt_refresh_token_required
